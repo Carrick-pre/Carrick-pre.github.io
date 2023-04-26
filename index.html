@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+	
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,17 @@
 			height: min-content ;
 			width: 60%;
 			background-image: url("images/bg01.gif");
+		}
+
+		div.framed{
+			border-style: outset;
+			border-width: 10px;
+			height: min-content ;
+			width: fit-content;
+			margin:auto;
+			background-image: url("images/Dukesource125.gif");
+			transform: scale(1.6);
+		
 		}
 
 		
@@ -95,6 +106,17 @@
 <body BGCOLOR="#000000" BODY BACKGROUND="images/bkgrade.jpg" TEXT="#ffe6e6  " LINK="#ff6666" VLINK="#ff6666"
 	ALINK="#ff6666">
 
+	<div class="smelly">
+		<center>
+			<br>
+			<br>
+			<br><br>
+				<div class="frame">
+			<h1>Carrick's page</h1>
+			<br>
+			<br>
+		</div>
+
 	<div class="heading">
 		<center> <img src="images/greenguy.gif">
 
@@ -111,14 +133,7 @@
 		</center>
 	</div>
 
-	<div class="smelly">
-		<center>
-			<br>
-			<br>
-			<br><br>
-				<div class="frame">
-			<h1>Carrick's page</h1>
-		</div>
+	
 			<p>Hello, I am carrick, and welcome to my webpage here on the internet.
 				I am 26 years old. I study with the confusers. I like linux, wood working and big into music. I
 				drive an old car and have a big subwoofer in it. I am fond of cats. this website breaks as soon as you load it on a mobile. you have been warned. 
@@ -145,42 +160,9 @@
 
 		</center>
 
-		<center>style =;"
-			<div id="windows" >
-				<div class="window" style="margin: 32px; width: 300px; transform: scale(2);">
-					<div class="title-bar">
-						<div class="title-bar-text">
-							Java Based Ai
-						</div>
-		
-						<div class="title-bar-controls">
-							<button aria-label="Minimize"></button>
-							<button aria-label="Maximize"></button>
-							<button aria-label="Close"></button>
-						</div>
-					</div>
-					<div class="window-body">
-						<p> Seeing all the craze about AI programming, I have decided to build my own. However I do not like
-							python So I decieded to write the worlds first Java based AI models</p>
-						<div class="field-row-stacked" style="width: 200px">
-		
-							<textarea id="text20" rows="8"
-								style="justify-content: center">Hello and Welcome to Java AI how can I help you today ?</textarea>
-						</div>
-						<div class="field-row" style="justify-content: flex-start">
-		
-							<label for="text17">Send a message : </label>
-		
-							<input id="text17" type="text" />
-							<button id="message">Send</button>
-						</div>
-		
-						<section class="field-row" style="justify-content: flex-end">
-							<button>OK</button>
-							<button>Cancel</button>
-						</section>
-					</div>
-				</div>
+		<center>
+			<div id="windows"  class ="framed">
+				<iframe src="Ai.html" height="340" width="400"> </iframe>
 			</div>
 			<br>
 			<br>
@@ -191,6 +173,8 @@
 			<br>
 			<br>
 			<br>
+			<br>
+		
 		</center>
 
 		<div class="computers">
@@ -264,6 +248,7 @@
 		<p>
 			
 		</p>
+		<div class="car">
 		<center>
 			<br>
 			<IMG SRC="images/golf.jpg" width="200">
@@ -274,6 +259,8 @@
 			<img SRC="images/vw_spin.gif">
 			<br>
 		</center>
+		</di>
+		
 
 		<div class="construction">
 			<center>
@@ -396,33 +383,6 @@ background=1995.png&tablecolor=black&textcolor=white" frameborder="0"></iframe>
 
 
 
-<script>
 
-    function clearTextSet() {
-        const textarea = document.getElementById("text20"); // replace "myTextarea" with the ID of your textarea element
-        textarea.value = "";
-        randomNumber = Math.floor(Math.random() * 10);
-        textarea.value= java[randomNumber]
-    }
-
-    const button = document.getElementById("message"); // get the button element by ID
-    button.addEventListener("click", function () {
-        clearTextSet()
-        console.log("Button clicked!");
-    });
-    const java = [
-    "java.lang.NullPointerException at ai.neuralnetworks.DeepLearningModel.predict(DeepLearningModel.java:42)",
-    "java.lang.IndexOutOfBoundsException at ai.reinforcementlearning.Environment.getState(Environment.java:17)",
-    "java.lang.ArithmeticException at ai.optimization.GradientDescent.optimize(GradientDescent.java:23)",
-    "java.lang.ArrayIndexOutOfBoundsException at ai.genetic.GeneticAlgorithm.selectParents(GeneticAlgorithm.java:29)",
-    "java.lang.ClassCastException at ai.naturallanguageprocessing.PartOfSpeechTagger.tag(PartOfSpeechTagger.java:11)",
-    "java.lang.IllegalArgumentException at ai.imageprocessing.ImageProcessor.blur(ImageProcessor.java:8)",
-    "java.lang.IllegalStateException at ai.chatbot.DialogueManager.run(DialogueManager.java:33)",
-    "java.lang.NumberFormatException at ai.datascience.Statistics.calculateMean(Statistics.java:19)",
-    "java.lang.UnsupportedOperationException at ai.games.Game.getLegalMoves(Game.java:42)",
-    "java.io.IOException at ai.robotics.RobotController.executeCommand(RobotController.java:15)"
-];
-
-</script>
 
 </html>

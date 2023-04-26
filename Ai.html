@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>98.css example</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+</head>
+
+
+<body> 
+    <center>
+    <div id="windows">
+        <div class="window" style="margin: 32px; width: 300px">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    Java Based Ai
+                </div>
+
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body">
+                <p> Seeing all the craze about AI programming, I have decided to build my own. However I do not like
+                    python So I decieded to write the worlds first Java based AI models</p>
+                <div class="field-row-stacked" style="width: 200px">
+
+                    <textarea id="text20" rows="8"
+                        style="justify-content: center">Hello and Welcome to Java AI how can I help you today ?</textarea>
+                </div>
+                <div class="field-row" style="justify-content: flex-start">
+
+                    <label for="text17">Send a message : </label>
+
+                    <input id="text17" type="text" />
+                    <button id="message">Send</button>
+                </div>
+
+                <section class="field-row" style="justify-content: flex-end">
+                    <button>OK</button>
+                    <button>Cancel</button>
+                </section>
+            </div>
+        </div>
+    </div>
+</center>
+</body>
+
+<script>
+
+    function clearTextSet() {
+        const textarea = document.getElementById("text20"); // replace "myTextarea" with the ID of your textarea element
+        textarea.value = "";
+        randomNumber = Math.floor(Math.random() * 10);
+        textarea.value= java[randomNumber]
+    }
+
+    const button = document.getElementById("message"); // get the button element by ID
+    button.addEventListener("click", function () {
+        clearTextSet()
+        console.log("Button clicked!");
+    });
+    const java = [
+    "java.lang.NullPointerException at ai.neuralnetworks.DeepLearningModel.predict(DeepLearningModel.java:42)",
+    "java.lang.IndexOutOfBoundsException at ai.reinforcementlearning.Environment.getState(Environment.java:17)",
+    "java.lang.ArithmeticException at ai.optimization.GradientDescent.optimize(GradientDescent.java:23)",
+    "java.lang.ArrayIndexOutOfBoundsException at ai.genetic.GeneticAlgorithm.selectParents(GeneticAlgorithm.java:29)",
+    "java.lang.ClassCastException at ai.naturallanguageprocessing.PartOfSpeechTagger.tag(PartOfSpeechTagger.java:11)",
+    "java.lang.IllegalArgumentException at ai.imageprocessing.ImageProcessor.blur(ImageProcessor.java:8)",
+    "java.lang.IllegalStateException at ai.chatbot.DialogueManager.run(DialogueManager.java:33)",
+    "java.lang.NumberFormatException at ai.datascience.Statistics.calculateMean(Statistics.java:19)",
+    "java.lang.UnsupportedOperationException at ai.games.Game.getLegalMoves(Game.java:42)",
+    "java.io.IOException at ai.robotics.RobotController.executeCommand(RobotController.java:15)"
+];
+
+</script>
+
+
+</html>
