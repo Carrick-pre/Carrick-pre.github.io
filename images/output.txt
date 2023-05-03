@@ -31,11 +31,14 @@
 <img src="images/Buttons/DeadNow.jpg">
 <img src="images/Buttons/discord-no-way.gif">
 <img src="images/Buttons/dnfbtn.gif">
+<img src="images/Buttons/dp_NOW.gif">
 <img src="images/Buttons/elect.gif">
 <img src="images/Buttons/emacs.png">
 <img src="images/Buttons/email.gif">
 <img src="images/Buttons/everything.gif">
 <img src="images/Buttons/femboy.gif">
+<img src="images/Buttons/filecity.gif">
+<img src="images/Buttons/fishnow2.gif">
 <img src="images/Buttons/gayrat.png">
 <img src="images/Buttons/gaywebring.gif">
 <img src="images/Buttons/geo-citi.gif">
@@ -45,6 +48,7 @@
 <img src="images/Buttons/grizzly.gif">
 <img src="images/Buttons/gutenberg.gif">
 <img src="images/Buttons/h-free-anim.gif">
+<img src="images/Buttons/hmtna23.gif">
 <img src="images/Buttons/html32.gif">
 <img src="images/Buttons/InternetArchive.png">
 <img src="images/Buttons/jamiroquai.gif">
@@ -67,6 +71,7 @@
 <img src="images/Buttons/netnow.gif">
 <img src="images/Buttons/newbud.gif">
 <img src="images/Buttons/nftbutton.gif">
+<img src="images/Buttons/noclick.gif">
 <img src="images/Buttons/noframes.gif">
 <img src="images/Buttons/nosmoke.gif">
 <img src="images/Buttons/noteoth2.gif">
@@ -76,10 +81,12 @@
 <img src="images/Buttons/noweb3.gif">
 <img src="images/Buttons/no_loud.gif">
 <img src="images/Buttons/ns-helper.gif">
+<img src="images/Buttons/oldweb.png">
 <img src="images/Buttons/openeyes.gif">
 <img src="images/Buttons/paganfish.JPG">
 <img src="images/Buttons/penguin.gif">
 <img src="images/Buttons/pensioner.gif">
+<img src="images/Buttons/pepsi.gif">
 <img src="images/Buttons/powernavi-badge.jpg">
 <img src="images/Buttons/queer.png">
 <img src="images/Buttons/remail.gif">
@@ -93,9 +100,11 @@
 <img src="images/Buttons/sun.gif">
 <img src="images/Buttons/transnow2.gif">
 <img src="images/Buttons/transrats.gif">
+<img src="images/Buttons/transrights.png">
 <img src="images/Buttons/tumblr_6c8b180de2d6126ced7d9eed840b1cfa_48fce19e_250.jpg">
 <img src="images/Buttons/tumblr_8329e11ab34172ada7ec1083fb1fa01f_f78ef65c_250.webp">
 <img src="images/Buttons/tumblr_c032ce6d651131ef1515ee3a91437955_c530ceb5_250.png">
+<img src="images/Buttons/tumblr_d87d72ee174d62f75b3414315fc9c774_55c18c31_100.gif">
 <img src="images/Buttons/tyg.gif">
 <img src="images/Buttons/unregshare.gif">
 <img src="images/Buttons/usrobot.gif">
