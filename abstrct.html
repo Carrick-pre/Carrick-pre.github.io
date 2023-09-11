@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+<img src="" alt="">
+    <style>
+        body {
+            background-image: url('images/lain/lainatscreen.gif');
+            background-size: cover; 
+            background-repeat: no-repeat;
+    </style>
+</head>
+
+<body>
+   
+    <hr>
+    <h1>Your IP Address:</h1>
+    <p id="ipAddress">Loading...</p>
+    <hr>
+
+    <p><strong>User Agent:</strong> <span id="userAgent"></span></p>
+    <p><strong>Browser Name:</strong> <span id="browserName"></span></p>
+    <p><strong>Browser Version:</strong> <span id="browserVersion"></span></p>
+    <p><strong>Platform:</strong> <span id="platform"></span></p>
+    <p><strong>Cookies Enabled:</strong> <span id="cookiesEnabled"></span></p>
+    <p><strong>Language:</strong> <span id="language"></span></p>
+    <p><strong>Screen Resolution:</strong> <span id="screenResolution"></span></p>
+    <p><strong>Online Status:</strong> <span id="onlineStatus"></span></p>
+    <p><strong>Screen Color Depth:</strong> <span id="colorDepth"></span></p>
+    <p><strong>Available Screen Width:</strong> <span id="screenWidth"></span></p>
+    <p><strong>Available Screen Height:</strong> <span id="screenHeight"></span></p>
+    <p><strong>Viewport Width:</strong> <span id="viewportWidth"></span></p>
+    <p><strong>Viewport Height:</strong> <span id="viewportHeight"></span></p>
+    <p><strong>Document Width:</strong> <span id="documentWidth"></span></p>
+    <p><strong>Document Height:</strong> <span id="documentHeight"></span></p>
+    <p><strong>Browser Plugins:</strong> <span id="browserPlugins"></span></p>
+    <p><strong>Java Enabled:</strong> <span id="javaEnabled"></span></p>
+    <p><strong>Do Not Track (DNT):</strong> <span id="doNotTrack"></span></p>
+
+    <script>
+        // Get browser information
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        document.getElementById('browserName').textContent = navigator.appName;
+        document.getElementById('browserVersion').textContent = navigator.appVersion;
+        document.getElementById('platform').textContent = navigator.platform;
+        document.getElementById('cookiesEnabled').textContent = navigator.cookieEnabled ? 'Yes' : 'No';
+        document.getElementById('language').textContent = navigator.language || navigator.userLanguage;
+
+        // Get screen information
+        document.getElementById('screenResolution').textContent = `${window.screen.width}x${window.screen.height}`;
+        document.getElementById('colorDepth').textContent = window.screen.colorDepth;
+        document.getElementById('screenWidth').textContent = window.screen.availWidth;
+        document.getElementById('screenHeight').textContent = window.screen.availHeight;
+
+        // Get viewport and document dimensions
+        document.getElementById('viewportWidth').textContent = window.innerWidth;
+        document.getElementById('viewportHeight').textContent = window.innerHeight;
+        document.getElementById('documentWidth').textContent = document.documentElement.clientWidth;
+        document.getElementById('documentHeight').textContent = document.documentElement.clientHeight;
+
+        // Check online status
+        const onlineStatus = navigator.onLine ? 'Online' : 'Offline';
+        document.getElementById('onlineStatus').textContent = onlineStatus;
+
+        // Get browser plugins
+        const plugins = Array.from(navigator.plugins).map(plugin => plugin.name);
+        document.getElementById('browserPlugins').textContent = plugins.join(', ');
+
+        // Check if Java is enabled
+        document.getElementById('javaEnabled').textContent = navigator.javaEnabled() ? 'Yes' : 'No';
+
+        // Check Do Not Track (DNT) header
+        document.getElementById('doNotTrack').textContent = navigator.doNotTrack === '1' ? 'Enabled' : 'Disabled';
+
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ipAddress').textContent = data.ip;
+            })
+            .catch(error => {
+                console.error('Error fetching IP address:', error);
+                document.getElementById('ipAddress').textContent = 'Unable to fetch IP address';
+            });
+    </script>
+
+
+ 
+</body>
+</html>
