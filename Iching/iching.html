@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    p.pic {
+      font-size: 150px;
+      margin-top: 0; /* Reset margin */
+    }
+    #hexagramDisplay {
+      display: none;
+      border: 2px solid black; /* Example border */
+      padding: 20px;
+      max-width: auto; /* Set width to auto */
+      height: auto; /* Set height to auto */
+      text-align: center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iching</title>
+  </head>
+  <body>
+    <center>
+      <h1>Iching, Webzone of changes</h1>
+      <a href="https://en.wikipedia.org/wiki/I_Ching">
+        Iching Book of changes</a
+      >
+      <p>
+        Write a question, ponder, let your mouse linger on the calculate button
+        and then press verdict
+      </p>
+      <textarea></textarea>
+      <br />
+      <button id="calculate">calculate...</button>
+      <button id="verdict">Verdict...</button>
+      <p id="message"></p>
+    </center>
+
+    <div id="hexagramDisplay">
+      <p id="english"></p>
+      <p id="tradChinese"></p>
+      <p class="pic" id="hexFont"></p>
+    </div>
+
+    <div id="textTable">
+      <button id="more">Click for all the deatails</button>
+      <p id="wilhelmAbove"></p>
+    </div>
+    <script src="iching.js"></script>
+  </body>
+
+  <footer>
+    <a
+      href="https://github.com/adamblvck/iching-wilhelm-dataset?tab=MIT-1-ov-file#readme"
+    >
+      Uses this json dataset, thank you ADAM BLVCK
+    </a>
+  </footer>
+</html>
